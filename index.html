@@ -1,0 +1,541 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0B1F4D">
+
+<title>College IQ</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<header class="topbar">
+
+  <a class="brand" href="#" onclick="showPage('home');return false">
+    <img src="./images/logo.png" alt="College IQ Logo" class="brand-logo">
+    <span>College IQ</span>
+  </a>
+
+  <button class="menu-toggle" aria-label="Toggle menu"
+  onclick="document.querySelector('.nav').classList.toggle('open')">☰</button>
+
+  <nav class="nav">
+    <button class="nav-link active" data-page="home" onclick="showPage('home')">Home</button>
+    <button class="nav-link" data-page="colleges" onclick="showPage('colleges')">Top 10 Colleges</button>
+    <button class="nav-link" data-page="ipe" onclick="showPage('ipe')">IPE Resources</button>
+    <button class="nav-link" data-page="eapcet" onclick="showPage('eapcet')">EAPCET Resources</button>
+    <button class="nav-link logout" onclick="logout()">Logout ↗</button>
+  </nav>
+
+</header>
+
+<main>
+
+<!-- HOME PAGE -->
+
+<section id="home" class="page active">
+
+  <div class="hero">
+
+    <div class="hero-copy">
+
+      <div class="eyebrow">
+        <span class="pulse"></span>
+        YOUR MPC STUDY COMPANION
+      </div>
+
+      <h1>
+        Your Ultimate
+        <span>Inter Study.</span>
+        Destination!
+      </h1>
+      <p class="hero-subtitle">
+  For Inter 1st Year &amp; 2nd Year Students
+</p>
+
+      
+<div class="subject-pills">
+
+  <!-- Mathematics -->
+  <div class="subject-pill">
+    <span class="subject-symbol math-symbol">π</span>
+    <span>Mathematics</span>
+  </div>
+
+  <!-- Physics -->
+  <div class="subject-pill">
+    <svg class="subject-icon" viewBox="0 0 48 48" aria-hidden="true">
+      <ellipse cx="24" cy="24" rx="20" ry="8"
+        transform="rotate(0 24 24)"/>
+      <ellipse cx="24" cy="24" rx="20" ry="8"
+        transform="rotate(60 24 24)"/>
+      <ellipse cx="24" cy="24" rx="20" ry="8"
+        transform="rotate(120 24 24)"/>
+      <circle cx="24" cy="24" r="3"/>
+    </svg>
+    <span>Physics</span>
+  </div>
+
+  <!-- Chemistry -->
+  <div class="subject-pill">
+    <svg class="subject-icon flask-icon" viewBox="0 0 48 48" aria-hidden="true">
+      <path d="M18 5h12M21 5v15L10 39q-2 4 4 4h20q6 0 4-4L27 20V5"
+        />
+      <path d="M15 33h18l5 8H10z"/>
+    </svg>
+    <span>Chemistry</span>
+  </div>
+
+</div>
+
+
+      <button class="primary-btn hero-btn" onclick="showPage('form')">
+        Click here for resources <span>→</span>
+      </button>
+
+      <div class="hero-note">
+        <span class="note-icon">✦</span>
+        Resources for 1st &amp; 2nd year MPC students
+      </div>
+
+    </div>
+
+    <!-- BLUE SCIENTIFIC ILLUSTRATION -->
+
+    <div class="hero-art science-art">
+
+      <div class="atom-illustration">
+
+        <div class="atom-orbit orbit-a">
+          <span class="electron electron-one"></span>
+        </div>
+
+        <div class="atom-orbit orbit-b">
+          <span class="electron electron-two"></span>
+        </div>
+
+        <div class="atom-orbit orbit-c">
+          <span class="electron electron-three"></span>
+        </div>
+
+        <div class="atom-core">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+      </div>
+
+      <div class="science-card math-card">
+        <span class="science-label">MATHEMATICS</span>
+        <div class="science-formula">∫ f(x) dx</div>
+      </div>
+
+      <div class="science-card physics-card">
+        <span class="science-label">PHYSICS</span>
+        <div class="science-formula">F = ma</div>
+      </div>
+
+      <div class="science-card geometry-card">
+        <span class="science-label">GEOMETRY</span>
+        <div class="science-formula">a² + b² = c²</div>
+      </div>
+
+      <div class="science-card chemistry-card">
+        <span class="science-label">CHEMISTRY</span>
+
+        <svg viewBox="0 0 100 110" class="flask-svg" aria-label="Chemistry laboratory flask">
+          <path d="M38 8 H62 M43 8 V43 L19 86 Q15 96 28 99 H72 Q85 96 81 86 L57 43 V8"
+            fill="none" stroke="#1769D2" stroke-width="4"
+            stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M29 77 H71 L80 91 Q83 97 70 97 H30 Q17 97 21 91 Z"
+            fill="#80C4FF" opacity=".75"/>
+          <circle cx="42" cy="83" r="4" fill="#1769D2"/>
+          <circle cx="57" cy="89" r="3" fill="#1769D2"/>
+        </svg>
+      </div>
+
+      <div class="science-caption">
+        <span class="caption-dot"></span>
+        EXPLORE • LEARN • DISCOVER
+      </div>
+
+    </div>
+
+  
+  </div>
+
+  
+<!-- WHY COLLEGE IQ SECTION -->
+
+<section class="preparation-section">
+
+  <div class="preparation-heading">
+
+    <span class="preparation-label">WHY COLLEGEIQ</span>
+
+    <h2>Your Preparation, Made Easier</h2>
+
+    <p>Everything You Need. Nothing You Pay.</p>
+
+  </div>
+
+  <div class="preparation-grid">
+
+    <div class="preparation-card">
+
+      <div class="preparation-icon">
+        <span>☑</span>
+      </div>
+
+      <span class="preparation-number">01</span>
+
+      <h3>Quality Study Materials</h3>
+
+      <p>
+        Clear, well-organised notes and formula sheets
+        you can actually revise from.
+      </p>
+
+    </div>
+
+    <div class="preparation-card">
+
+      <div class="preparation-icon">
+        <span>◎</span>
+      </div>
+
+      <span class="preparation-number">02</span>
+
+      <h3>EAPCET-Focused Resources</h3>
+
+      <p>
+        Built around the AP &amp; TS EAPCET syllabus,
+        so every page is worth your time.
+      </p>
+
+    </div>
+
+    <div class="preparation-card">
+
+      <div class="preparation-icon">
+        <span>♔</span>
+      </div>
+
+      <span class="preparation-number">03</span>
+
+      <h3>Completely Free Access</h3>
+
+      <p>
+        No fees, no login, no hidden charges.
+        Fill one short form and start learning.
+      </p>
+
+    </div>
+
+  </div>
+
+  <!-- FINAL CALL TO ACTION -->
+
+  <div class="preparation-cta">
+
+    <div class="cta-circle circle-left"></div>
+    <div class="cta-circle circle-right"></div>
+
+    <h2>Start Your Preparation Today!</h2>
+
+    <p>
+      Get access to ₹10,000 worth of free educational resources.
+    </p>
+
+    <button
+      class="preparation-btn"
+      onclick="showPage('form')"
+    >
+      Get the Free Resources <span>→</span>
+    </button>
+
+  </div>
+
+</section>
+
+</section>
+
+
+<!-- TOP COLLEGES PAGE -->
+
+
+<section id="colleges" class="page content-page">
+
+  <div class="page-intro">
+
+    <div class="eyebrow">PLAN YOUR NEXT STEP</div>
+
+    <h1>
+      Explore engineering<br>
+      <span class="accent">college options.</span>
+    </h1>
+
+    <p>
+      A starter list of well-known engineering institutions in Andhra Pradesh and Telangana.
+      Check current rankings, branches, eligibility and counselling information before making decisions.
+    </p>
+
+  </div>
+
+  <div class="college-grid" id="collegeList"></div>
+
+  <p class="disclaimer">
+    This is an informational shortlist, not an official ranking or admission guarantee.
+    Verify details through the colleges and official counselling authorities.
+  </p>
+
+</section>
+
+
+<!-- IPE PAGE -->
+
+<section id="ipe" class="page content-page">
+
+  <div class="page-intro compact">
+
+    <div class="eyebrow">INTERMEDIATE PUBLIC EXAMINATION</div>
+
+    <h1>Get ready for <span class="accent">IPE.</span></h1>
+
+    <p>
+      Access your MPC study resources for first and second year.
+      Choose your year in the resource form to open the relevant folder.
+    </p>
+
+    <button class="primary-btn" onclick="showPage('form')">
+      Get IPE resources <span>→</span>
+    </button>
+
+  </div>
+
+  <div class="subject-strip">
+    <span>MATHEMATICS</span>
+    <span>PHYSICS</span>
+    <span>CHEMISTRY</span>
+    <span>REVISION</span>
+  </div>
+
+</section>
+
+
+<!-- EAPCET PAGE -->
+
+<section id="eapcet" class="page content-page">
+
+  <div class="page-intro compact">
+
+    <div class="eyebrow">ENTRANCE EXAM PREPARATION</div>
+
+    <h1>Practice for <span class="accent">EAPCET.</span></h1>
+
+    <p>
+      Prepare for AP EAPCET and TS EAPCET with a focused MPC resource collection.
+      Select your year to access the matching study folder.
+    </p>
+
+    <button class="primary-btn" onclick="showPage('form')">
+      Get EAPCET resources <span>→</span>
+    </button>
+
+  </div>
+
+  <div class="exam-chips">
+    <span>AP EAPCET</span>
+    <span>TS EAPCET</span>
+    <span>JEE FOUNDATION</span>
+  </div>
+
+</section>
+
+
+<!-- STUDENT REGISTRATION FORM -->
+
+<section id="form" class="page content-page form-page">
+
+  <div class="form-layout">
+
+    <div class="form-aside">
+
+      <div class="eyebrow">RESOURCE ACCESS</div>
+
+      <h1>
+        Let's get your<br>
+        <span class="accent">study kit ready.</span>
+      </h1>
+
+      <p>
+        Enter your basic details and select your Intermediate year.
+        Your selected study resources will be available immediately after registration.
+      </p>
+
+      <div class="aside-check">✓ First &amp; Second Year MPC</div>
+      <div class="aside-check">✓ IPE and entrance preparation</div>
+      <div class="aside-check">✓ Free digital study materials</div>
+
+    </div>
+
+    <form id="leadForm" class="lead-form">
+
+      <div class="form-offer-heading">
+        Fill the Form &amp; Unlock ₹10K Worth of Free Resources 🔥
+      </div>
+
+      <div class="form-title">
+        <span>STUDENT DETAILS</span>
+        <span class="step">01 / 01</span>
+      </div>
+
+      <div class="field">
+        <input
+          id="name"
+          name="name"
+          type="text"
+          required
+          maxlength="100"
+          placeholder="Enter your full name"
+          aria-label="Student name"
+        >
+      </div>
+
+      <div class="field-row">
+
+        <div class="field">
+          <input
+            id="email"
+            name="email"
+            type="email"
+            required
+            placeholder="Enter your email address"
+            aria-label="Email address"
+          >
+        </div>
+
+        <div class="field">
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            inputmode="numeric"
+            pattern="[0-9+() -]{10,16}"
+            required
+            placeholder="Enter mobile number"
+            aria-label="Phone number"
+          >
+        </div>
+
+      </div>
+
+      <div class="field">
+
+        <label>Choose your Intermediate year *</label>
+
+        <div class="year-options">
+
+          <label class="year-option">
+            <input type="checkbox" name="year" value="1st Year">
+            <span>
+              <b>1st Year</b>
+              <small>Junior Intermediate</small>
+            </span>
+          </label>
+
+          <label class="year-option">
+            <input type="checkbox" name="year" value="2nd Year">
+            <span>
+              <b>2nd Year</b>
+              <small>Senior Intermediate</small>
+            </span>
+          </label>
+
+        </div>
+
+        <small class="helper">
+          Select one or both years.
+        </small>
+
+      </div>
+
+      <label class="consent">
+        <input type="checkbox" id="consent" required>
+        <span>
+          I confirm these details are accurate and agree to be contacted
+          about the requested study resources. If I am under 18,
+          my parent/guardian is aware of this submission.
+        </span>
+      </label>
+
+      <button
+        class="primary-btn submit-btn"
+        type="submit"
+        id="submitBtn"
+      >
+        Get Resources <span>→</span>
+      </button>
+
+      <p class="privacy">
+        Your details are used to manage access to the requested study resources.
+      </p>
+
+      <div id="formMessage" role="status" aria-live="polite"></div>
+
+    </form>
+
+  </div>
+
+</section>
+
+</main>
+
+
+
+<!-- COLLEGE IQ FOOTER -->
+
+<footer class="collegeiq-footer">
+
+  <a class="footer-brand" href="#"
+     onclick="showPage('home');return false">
+
+    <img
+      src="./images/logo.png"
+      alt="College IQ Logo"
+      class="brand-logo"
+    >
+
+    <strong>CollegeIQ</strong>
+
+  </a>
+
+  <p class="footer-description">
+    Free EAPCET study resources for Intermediate students
+    in Andhra Pradesh &amp; Telangana. We use your details
+    only to share resources and preparation updates.
+  </p>
+
+  <span class="footer-copyright">
+    © <span id="yearNow"></span> CollegeIQ
+  </span>
+
+</footer>
+
+
+
+<script src="app.js"></script>
+
+</body>
+</html>

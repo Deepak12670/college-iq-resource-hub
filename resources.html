@@ -1,0 +1,485 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#14532D">
+  <title>College IQ</title>
+  <link rel="stylesheet" href="styles.css">
+
+  <style>
+    .resource-wrap {
+      max-width: 900px;
+      margin: 45px auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .resource-wrap h1 {
+      font-size: 38px;
+      color: #14532D;
+      font-family: 'Space Grotesk', sans-serif;
+    }
+
+    .resource-wrap > p {
+      color: #64748b;
+      line-height: 1.7;
+    }
+
+    .resource-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 30px;
+    }
+
+    .resource-card {
+      background: white;
+      border: 1px solid #dcfce7;
+      border-radius: 14px;
+      padding: 24px 18px;
+    }
+
+    .resource-card h2 {
+      color: #14532D;
+    }
+
+    .resource-card p {
+      color: #64748b;
+    }
+
+    .resource-card .symbol {
+      font-size: 36px;
+      color: #15803D;
+    }
+
+    .resource-card a {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 12px 18px;
+      background: #15803D;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .resource-card a:hover {
+      background: #14532D;
+    }
+
+    .resource-card.second a {
+      background: #16A34A;
+    }
+
+    /* Physical copy section */
+
+    .physical-section {
+      margin-top: 35px;
+      padding: 25px;
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-radius: 15px;
+      text-align: left;
+    }
+
+    .physical-section h2 {
+      color: #14532D;
+      font-size: 23px;
+      margin-top: 0;
+    }
+
+    .physical-section > p {
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    .physical-choice {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 18px;
+      font-weight: 600;
+      color: #14532D;
+    }
+
+    .physical-choice input {
+      width: 18px;
+      height: 18px;
+      accent-color: #15803D;
+    }
+
+    .physical-form {
+      display: none;
+      margin-top: 22px;
+      padding-top: 20px;
+      border-top: 1px solid #bbf7d0;
+    }
+
+    .physical-form.show {
+      display: block;
+    }
+
+    .physical-form .field {
+      margin-bottom: 14px;
+    }
+
+    .physical-form label {
+      display: block;
+      margin-bottom: 6px;
+      color: #334155;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .physical-form input,
+    .physical-form textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #cbd5e1;
+      border-radius: 7px;
+      font: inherit;
+      font-size: 14px;
+      background: white;
+      box-sizing: border-box;
+    }
+
+    .physical-form textarea {
+      resize: vertical;
+    }
+
+    .physical-form input:focus,
+    .physical-form textarea:focus {
+      outline: 2px solid #86efac;
+      border-color: #15803D;
+    }
+
+    .physical-submit {
+      width: 100%;
+      padding: 13px;
+      border: none;
+      border-radius: 8px;
+      background: #15803D;
+      color: white;
+      font-weight: 700;
+      font-size: 15px;
+      cursor: pointer;
+    }
+
+    .physical-submit:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+
+    #physicalMessage {
+      margin-top: 12px;
+      font-size: 14px;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      color: #15803D;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    @media(max-width:600px) {
+      .resource-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .resource-wrap h1 {
+        font-size: 30px;
+      }
+
+      .physical-section {
+        padding: 18px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header class="topbar">
+  <a class="brand" href="index.html">
+  <img src="./images/logo.png" alt="College IQ Logo" class="brand-logo">
+  <span>College IQ</span>
+</a>
+</header>
+
+<main class="resource-wrap">
+
+  <div class="eyebrow"></div>
+
+  <h1>Your MPC Study Kit</h1>
+
+  <p>
+    
+  </p>
+
+
+  <!-- DIGITAL RESOURCES -->
+
+  <div class="resource-grid" id="resourceGrid">
+
+    <article class="resource-card" id="firstYear">
+      <div class="symbol">📘</div>
+      <h2>1st Year MPC</h2>
+      <p>Junior Intermediate study materials</p>
+
+      <a
+        href="https://drive.google.com/drive/folders/1JhxT7_70RPfrdFfncopX2m-WIHjhXO9q?usp=drive_link"
+        target="_blank"
+        rel="noopener"
+      >
+        Click Here →
+      </a>
+    </article>
+
+
+    <article class="resource-card second" id="secondYear">
+      <div class="symbol">🎓</div>
+      <h2>2nd Year MPC</h2>
+      <p>Senior Intermediate study materials</p>
+
+      <a
+        href="https://drive.google.com/drive/folders/1mJgbqlAMa-nBQYz7uQ4laq6Y9-leEc_p?usp=drive_link"
+        target="_blank"
+        rel="noopener"
+      >
+        Click Here →
+      </a>
+    </article>
+
+  </div>
+
+
+  <!-- OPTIONAL PHYSICAL COPY REQUEST -->
+
+  <section class="physical-section">
+
+    <h2>📦 Need Physical Study Materials?</h2>
+
+    <p>
+      You can also request printed physical copies of the study materials.
+      This request is optional.
+    </p>
+
+    <label class="physical-choice">
+      <input type="checkbox" id="needPhysical">
+      Yes, I would like to request physical copies.
+    </label>
+
+
+    <!-- DETAILS SHOWN ONLY WHEN CHECKED -->
+
+    <form id="physicalForm" class="physical-form">
+
+      <div class="field">
+        <label for="college">College name *</label>
+        <input
+          type="text"
+          id="college"
+          placeholder="Enter your college name"
+          required
+          maxlength="150"
+        >
+      </div>
+
+      <div class="field">
+        <label for="address">Full address *</label>
+        <textarea
+          id="address"
+          rows="3"
+          placeholder="Enter your complete address"
+          required
+          maxlength="500"
+        ></textarea>
+      </div>
+
+      <div class="field">
+        <label for="parentName">Parent / Guardian name *</label>
+        <input
+          type="text"
+          id="parentName"
+          placeholder="Enter parent or guardian name"
+          required
+          maxlength="100"
+        >
+      </div>
+
+      <div class="field">
+        <label for="parentPhone">Parent / Guardian mobile number *</label>
+        <input
+          type="tel"
+          id="parentPhone"
+          inputmode="numeric"
+          pattern="[0-9+() -]{10,16}"
+          placeholder="Enter parent or guardian mobile number"
+          required
+        >
+      </div>
+
+      <button
+        type="submit"
+        class="physical-submit"
+        id="physicalSubmit"
+      >
+        Submit Physical Copy Request →
+      </button>
+
+      <p id="physicalMessage" role="status" aria-live="polite"></p>
+
+    </form>
+
+  </section>
+
+
+  <a class="back-link" href="index.html">← Back to Home</a>
+
+</main>
+
+
+<script>
+
+  // GOOGLE APPS SCRIPT URL
+  const SCRIPT_URL =
+    "https://script.google.com/macros/s/AKfycbxiKCLVtciRewOQQqm5nGLurDh-YpUTCV67NMlJvziXfUfmeSKR7I8lqA11BjWPIcc/exec";
+
+
+  // DISPLAY ONLY THE SELECTED YEARS
+  const params = new URLSearchParams(window.location.search);
+  const selectedYears = params.get("years");
+
+  if (selectedYears) {
+
+    const years = selectedYears.split(",").map(x => x.trim());
+
+    if (!years.includes("1st Year")) {
+      document.getElementById("firstYear").style.display = "none";
+    }
+
+    if (!years.includes("2nd Year")) {
+      document.getElementById("secondYear").style.display = "none";
+    }
+
+  }
+
+
+  // SHOW OR HIDE PHYSICAL COPY FORM
+  const physicalCheckbox = document.getElementById("needPhysical");
+  const physicalForm = document.getElementById("physicalForm");
+
+  physicalCheckbox.addEventListener("change", function() {
+
+    physicalForm.classList.toggle("show", this.checked);
+
+  });
+
+
+  // READ STUDENT DETAILS SAVED DURING REGISTRATION
+  function getStudentDetails() {
+
+    try {
+      return JSON.parse(sessionStorage.getItem("mpcStudent") || "{}");
+    } catch (error) {
+      return {};
+    }
+
+  }
+
+
+  // SUBMIT PHYSICAL COPY REQUEST
+  physicalForm.addEventListener("submit", async function(event) {
+
+    event.preventDefault();
+
+    const student = getStudentDetails();
+
+    const message = document.getElementById("physicalMessage");
+    const button = document.getElementById("physicalSubmit");
+
+    if (!student.name || !student.email || !student.phone || !student.years) {
+
+      message.style.color = "#dc2626";
+      message.textContent =
+        "Your student registration details are unavailable. Please register again.";
+
+      return;
+
+    }
+
+    const data = {
+
+      name: student.name,
+      email: student.email,
+      phone: student.phone,
+      years: student.years,
+
+      physicalCopy: "Yes",
+
+      college: document.getElementById("college").value.trim(),
+      address: document.getElementById("address").value.trim(),
+      parentName: document.getElementById("parentName").value.trim(),
+      parentPhone: document.getElementById("parentPhone").value.trim(),
+
+      consent: "Yes"
+
+    };
+
+    button.disabled = true;
+    button.textContent = "Submitting...";
+
+    message.style.color = "#15803D";
+    message.textContent = "Submitting your physical-copy request...";
+
+    try {
+
+      await fetch(SCRIPT_URL, {
+
+        method: "POST",
+        mode: "no-cors",
+
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded;charset=UTF-8"
+        },
+
+        body: new URLSearchParams(data).toString()
+
+      });
+
+      message.textContent =
+        "Your request has been submitted. Thank you!";
+
+      physicalForm.reset();
+      physicalForm.classList.remove("show");
+      physicalCheckbox.checked = false;
+
+    }
+
+    catch (error) {
+
+      console.error(error);
+
+      message.style.color = "#dc2626";
+      message.textContent =
+        "Unable to submit your request. Please try again.";
+
+    }
+
+    finally {
+
+      button.disabled = false;
+      button.textContent = "Submit Physical Copy Request →";
+
+    }
+
+  });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,1138 @@
+*{box-sizing:border-box} :root{--green:#15803D;--blue:#2463eb;--orange:#ff8b35;--red:#f05a55;--ink:#142238;--muted:#68778c;--line:#e5eaf1;--bg:#f7f9fc}body{margin:0;background:#fff;color:var(--ink);font-family:'DM Sans',sans-serif}button,input,textarea{font:inherit}.topbar{height:76px;padding:0 max(calc((100% - 1160px)/2),5.5%);display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #edf0f5;background:#fff;position:sticky;top:0;z-index:10}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:var(--navy);font-family:'Space Grotesk';font-weight:700;letter-spacing:-.4px}.brand-mark{width:34px;height:34px;border-radius:10px;background:var(--navy);color:white;display:grid;place-items:center;font-size:19px}.brand-light{font-weight:500;color:#78869a;font-size:11px;letter-spacing:1.2px}.nav{display:flex;align-items:center;gap:8px}.nav-link{border:0;background:transparent;padding:10px 13px;border-radius:8px;color:#5b687b;font-weight:600;font-size:13px;cursor:pointer}.nav-link:hover,.nav-link.active{background:#edf3ff;color:var(--blue)}.nav-link.logout{color:#e05c52}.menu-toggle{display:none;background:none;border:0;font-size:24px;color:var(--navy)}main{min-height:75vh}.page{display:none}.page.active{display:block}.hero{max-width:1160px;margin:auto;min-height:510px;padding:78px 24px 65px;display:grid;grid-template-columns:1.04fr .96fr;align-items:center;gap:40px}.eyebrow{font-size:10px;letter-spacing:2px;font-weight:800;color:var(--blue);display:flex;align-items:center;gap:9px}.pulse,.live-dot{width:7px;height:7px;border-radius:50%;background:#ff8b35;display:inline-block}.hero h1,.page-intro h1,.form-aside h1{font-family:'Space Grotesk';font-size:clamp(42px,5vw,66px);line-height:1.04;letter-spacing:-2.7px;color:var(--navy);margin:20px 0}.accent{color:var(--blue)}.hero-sub,.page-intro p,.form-aside>p{font-size:16px;line-height:1.8;color:var(--muted);max-width:490px}.primary-btn{background:var(--blue);border:0;color:white;padding:17px 22px;border-radius:10px;font-weight:700;font-size:14px;box-shadow:0 9px 22px #2463eb30;cursor:pointer;transition:.2s}.primary-btn:hover{background:#174fc9;transform:translateY(-2px)}.primary-btn span{font-size:20px;margin-left:15px;vertical-align:-1px}.hero-btn{margin-top:22px;padding:19px 24px;font-size:15px}.hero-note{font-size:12px;color:#738096;margin-top:25px}.note-icon{color:var(--orange);font-size:18px;margin-right:6px}.hero-art{height:350px;position:relative;display:grid;place-items:center;background:radial-gradient(circle,#e9f0ff 0, #f5f8ff 48%,transparent 70%)}.orbit{position:absolute;border:1px dashed #b8c9ee;border-radius:50%;width:330px;height:330px}.orbit-two{width:255px;height:255px;border-color:#f3c9a8}.study-card{z-index:1;width:290px;padding:25px;border-radius:17px;background:#fff;box-shadow:0 24px 65px #18345c20;border:1px solid #eef1f6}.card-top,.progress-label{display:flex;justify-content:space-between;align-items:center;font-size:9px;letter-spacing:1.5px;color:#8390a3;font-weight:800}.live-dot{background:#27b887}.formula{font-family:'Space Grotesk';font-size:48px;color:var(--navy);margin:25px 0 3px}.formula-caption{color:#8995a7;font-size:11px}.progress-label{margin-top:30px;letter-spacing:.2px}.progress-label b{color:#27a77d}.progress{height:6px;border-radius:9px;background:#edf1f7;margin-top:10px}.progress i{display:block;width:76%;height:100%;border-radius:9px;background:linear-gradient(90deg,var(--blue),#62a4ff)}.float-tag{position:absolute;padding:12px 15px;background:#fff;border-radius:9px;box-shadow:0 10px 25px #18345c18;font-size:10px;letter-spacing:1px;color:#6b7890;z-index:2}.float-tag b{color:var(--blue);margin-left:7px}.tag-blue{top:58px;left:8%}.tag-orange{right:3%;bottom:64px;color:#d76c25}.decor{position:absolute;color:var(--orange);font-size:27px}.decor-cross{right:14%;top:42px}.decor-dot{left:12%;bottom:40px;color:#a9bde7;letter-spacing:4px}.quick-section{background:var(--bg);padding:65px max(calc((100% - 1110px)/2),5.5%)}.section-heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:28px}.section-heading h2,.bottom-cta h2{font:600 29px 'Space Grotesk';color:var(--navy);margin:10px 0 0;letter-spacing:-1px}.section-heading>p{font-size:13px;line-height:1.6;color:var(--muted)}.feature-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature-card{background:#fff;border:1px solid #edf0f5;border-radius:14px;padding:25px;min-height:220px}.feature-icon{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;font-size:22px;font-weight:700}.feature-icon.blue{background:#eaf0ff;color:var(--blue)}.feature-icon.orange{background:#fff1e5;color:#e57b2d}.feature-icon.red{background:#fff0ef;color:var(--red)}.feature-card h3{font:600 18px 'Space Grotesk';margin:18px 0 8px;color:var(--navy)}.feature-card p{font-size:12px;line-height:1.7;color:var(--muted);min-height:42px}.text-btn{border:0;background:none;padding:8px 0;color:var(--blue);font-weight:700;font-size:12px;cursor:pointer}.text-btn span{font-size:17px;margin-left:7px}.bottom-cta{max-width:1110px;margin:55px auto;padding:32px 35px;border-radius:16px;background:var(--navy);color:#fff;display:flex;justify-content:space-between;align-items:center}.bottom-cta .eyebrow{color:#a9c2ff}.bottom-cta h2{color:white;font-size:24px}.bottom-cta p{color:#c1cde0;font-size:12px;margin-bottom:0}.bottom-cta .primary-btn{background:var(--orange);box-shadow:none}.content-page{max-width:1160px;margin:auto;padding:65px 24px 90px}.page-intro{max-width:700px;margin-bottom:40px}.page-intro h1,.form-aside h1{font-size:54px}.page-intro p{font-size:14px}.page-intro.compact{margin:55px 0 40px}.subject-strip,.exam-chips{display:flex;gap:12px;flex-wrap:wrap;margin-top:50px}.subject-strip span,.exam-chips span{padding:18px 25px;border-radius:10px;background:#f0f4fc;color:var(--navy);font-size:12px;font-weight:800;letter-spacing:1px}.exam-chips span:nth-child(2){background:#fff1e6;color:#d8752b}.exam-chips span:nth-child(3){background:#fff0ef;color:#d9514b}.college-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:13px}.college-item{display:flex;align-items:center;gap:16px;padding:18px;border:1px solid var(--line);border-radius:12px}.college-number{width:38px;height:38px;flex:none;display:grid;place-items:center;border-radius:10px;background:#edf3ff;color:var(--blue);font-weight:800}.college-item h3{font:600 15px 'Space Grotesk';margin:0 0 4px;color:var(--navy)}.college-item p{font-size:11px;color:var(--muted);margin:0}.disclaimer{font-size:11px;color:#7d8999;margin-top:22px}.form-page{background:#f7f9fc;max-width:none;padding:60px 24px 85px}.form-layout{max-width:1080px;margin:auto;display:grid;grid-template-columns:.8fr 1.2fr;gap:65px;align-items:start}.form-aside{position:sticky;top:120px;padding-top:35px}.form-aside h1{font-size:47px}.form-aside>p{font-size:14px}.aside-check{margin-top:20px;color:#56667d;font-size:12px}.aside-check:first-letter{color:#20a67d}.lead-form{background:white;border:1px solid #e9edf4;border-radius:16px;padding:32px;box-shadow:0 12px 45px #19345b0b}.form-title{display:flex;justify-content:space-between;padding-bottom:20px;border-bottom:1px solid var(--line);margin-bottom:22px;color:var(--navy);font-size:11px;font-weight:800;letter-spacing:1.5px}.step{color:#9aa6b6}.field{margin-bottom:17px}.field label{display:block;font-size:12px;font-weight:700;color:#34445b;margin-bottom:8px}.field input,.field textarea{width:100%;border:1px solid #dfe5ee;border-radius:8px;padding:12px 13px;outline:none;color:var(--ink);font-size:13px;background:#fff}.field input:focus,.field textarea:focus{border-color:var(--blue);box-shadow:0 0 0 3px #2463eb12}.field-row{display:grid;grid-template-columns:1fr 1fr;gap:14px}.year-options{display:grid;grid-template-columns:1fr 1fr;gap:10px}.year-option{border:1px solid #dfe5ee;border-radius:9px;padding:12px;display:flex!important;align-items:center;gap:10px;cursor:pointer}.year-option:has(input:checked){border-color:var(--blue);background:#f4f7ff}.year-option input{width:auto;accent-color:var(--blue)}.year-option b,.year-option small{display:block}.year-option b{font-size:12px;color:var(--navy)}.year-option small,.helper{font-size:10px;color:#8995a5;margin-top:3px}.physical-note{display:flex;gap:12px;padding:14px;background:#fff6ed;border:1px solid #ffe5ce;border-radius:9px;margin:23px 0}.physical-note>span{font-size:20px}.physical-note b{font-size:12px;color:#9b541e}.physical-note p{font-size:11px;color:#9d795d;margin:4px 0 0}.consent{display:flex;gap:9px;align-items:flex-start;font-size:10px;line-height:1.5;color:#778498;margin:20px 0}.consent input{margin-top:2px;accent-color:var(--blue)}.submit-btn{width:100%;padding:16px}.privacy{font-size:9px;color:#9aa4b2;line-height:1.5;text-align:center}#formMessage{font-size:12px;margin-top:12px;color:#c34e43}footer{min-height:76px;border-top:1px solid #edf0f5;padding:18px max(calc((100% - 1160px)/2),5.5%);display:flex;align-items:center;justify-content:space-between;color:#8793a4;font-size:10px}.footer-brand{font-size:13px}.footer-brand .brand-mark{width:28px;height:28px;font-size:15px}
+@media(max-width:760px){.topbar{height:65px;padding:0 20px}.menu-toggle{display:block}.nav{display:none;position:absolute;top:64px;left:0;right:0;background:white;padding:12px 20px 18px;box-shadow:0 15px 25px #14223812;flex-direction:column;align-items:stretch}.nav.open{display:flex}.nav-link{text-align:left}.hero{grid-template-columns:1fr;padding:55px 23px 45px;gap:10px}.hero h1{font-size:48px}.hero-art{height:300px}.orbit{width:280px;height:280px}.orbit-two{width:220px;height:220px}.study-card{width:255px;padding:21px}.tag-blue{left:0;top:30px}.tag-orange{right:0;bottom:35px}.quick-section{padding:48px 22px}.section-heading{display:block}.section-heading>p{margin-top:12px}.feature-grid{grid-template-columns:1fr}.feature-card{min-height:0}.bottom-cta{margin:35px 20px;padding:25px;display:block}.bottom-cta .primary-btn{margin-top:20px}.content-page{padding:48px 21px 65px}.page-intro h1{font-size:44px}.college-grid{grid-template-columns:1fr}.form-page{padding:35px 14px 55px}.form-layout{grid-template-columns:1fr;gap:25px}.form-aside{position:static;padding:0 8px}.form-aside h1{font-size:42px;margin:14px 0}.form-aside>p{font-size:13px}.aside-check{display:inline-block;margin:12px 12px 0 0}.lead-form{padding:22px 17px}.field-row{grid-template-columns:1fr;gap:0}.subject-strip span,.exam-chips span{padding:14px 17px}footer{padding:20px;gap:12px;flex-wrap:wrap}footer>span:nth-child(2){display:none}}
+
+/* GREEN WEBSITE THEME */
+:root {
+  --green: #15803D;
+  --blue: #16A34A;
+  --navy: #14532D;
+}
+
+/* Homepage heading */
+.hero h1 {
+  color: #14532D;
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.hero h1 span,
+.hero h1 .accent,
+.accent {
+  color: #16A34A;
+}
+
+/* Homepage description */
+.hero-description,
+.hero-sub {
+  color: #475569;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 520px;
+}
+
+/* Homepage quote */
+.hero-quote {
+  color: #15803D;
+  font-size: 15px;
+  font-weight: 600;
+  font-style: italic;
+  line-height: 1.6;
+  margin-top: 18px;
+}
+
+/* Green illustration background */
+.hero-art {
+  background: radial-gradient(
+    circle,
+    #dcfce7 0,
+    #f0fdf4 48%,
+    transparent 70%
+  );
+}
+
+.orbit {
+  border-color: #bbf7d0;
+}
+
+.study-card {
+  border-color: #dcfce7;
+}
+
+/* Green progress bar */
+.progress {
+  background: #ecfdf5;
+}
+
+.progress i {
+  background: linear-gradient(90deg, #15803D, #86efac);
+}
+
+.float-tag b {
+  color: #15803D;
+}
+
+/* Mobile styling */
+@media (max-width: 760px) {
+  .hero-description,
+  .hero-sub {
+    font-size: 15px;
+  }
+}
+
+/* VERTICAL FORM LAYOUT - ALL FIELDS ONE BELOW ANOTHER */
+
+.lead-form {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+/* Stack every form field vertically */
+.field-row {
+  display: grid;
+  grid-template-columns: 1fr !important;
+  gap: 0;
+}
+
+.field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.field label {
+  display: block;
+  margin-bottom: 9px;
+}
+
+.field input,
+.field textarea {
+  display: block;
+  width: 100%;
+  min-height: 45px;
+}
+
+/* Display year options vertically */
+.year-options {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.year-option {
+  width: 100%;
+}
+
+/* Full-width submit button */
+.submit-btn {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Physical copy form fields */
+.physical-form .field-row {
+  grid-template-columns: 1fr !important;
+}
+
+/* Mobile responsive layout */
+@media (max-width: 760px) {
+  .lead-form {
+    padding: 22px 17px;
+  }
+
+  .field-row {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Compact Year Selection */
+.year-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.year-option {
+  min-height: 42px;
+  padding: 9px 12px !important;
+  border-radius: 7px;
+  gap: 8px;
+  font-size: 12px;
+}
+
+.year-option input {
+  width: 15px;
+  height: 15px;
+  margin: 0;
+}
+
+.year-option b {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.year-option small {
+  font-size: 10px;
+}
+
+/* =================================
+   BLUE & WHITE WEBSITE THEME
+================================= */
+
+:root {
+  --green: #2563eb;
+  --blue: #2563eb;
+  --navy: #172554;
+  --orange: #ff8b35;
+}
+
+/* Main headings */
+.hero h1,
+.page-intro h1,
+.form-aside h1 {
+  color: #172554;
+}
+
+.hero h1 span,
+.hero h1 .accent,
+.accent {
+  color: #2563eb;
+}
+
+/* Navigation */
+.nav-link:hover,
+.nav-link.active {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+/* Main buttons */
+.primary-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.primary-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Hero illustration */
+.hero-art {
+  background: radial-gradient(
+    circle,
+    #dbeafe 0,
+    #eff6ff 48%,
+    transparent 70%
+  );
+}
+
+.orbit {
+  border-color: #bfdbfe;
+}
+
+.orbit-two {
+  border-color: #fed7aa;
+}
+
+.study-card {
+  border-color: #dbeafe;
+}
+
+/* Progress bar */
+.progress {
+  background: #eff6ff;
+}
+
+.progress i {
+  background: linear-gradient(90deg, #2563eb, #60a5fa);
+}
+
+.float-tag b {
+  color: #2563eb;
+}
+
+/* Form focus and selection */
+.field input:focus,
+.field textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #2563eb15;
+}
+
+.year-option:has(input:checked) {
+  border-color: #2563eb;
+  background: #eff6ff;
+}
+
+.year-option input,
+.consent input {
+  accent-color: #2563eb;
+}
+
+/* Feature cards */
+.feature-icon.blue {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* Footer and section accents */
+.eyebrow {
+  color: #2563eb;
+}
+
+.bottom-cta {
+  background: #172554;
+}
+
+/* Keep compact year selection */
+.year-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.year-option {
+  min-height: 42px;
+  padding: 9px 12px !important;
+}
+
+/* Hide registration page promotional text */
+.form-aside {
+  display: none !important;
+}
+
+/* Center the registration form */
+.form-layout {
+  display: flex !important;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+/* Make registration form fit nicely */
+.lead-form {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+}
+/* IPE, EAPCET and JEE blue boxes */
+
+.exam-boxes {
+  display: flex;
+  gap: 14px;
+  margin-top: 25px;
+  flex-wrap: wrap;
+}
+
+.exam-box {
+  flex: 1;
+  min-width: 100px;
+  padding: 18px 12px;
+  text-align: center;
+  background: #EFF6FF;
+  border: 1px solid #BFDBFE;
+  border-radius: 12px;
+  color: #1D4ED8;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  transition: 0.2s ease;
+}
+
+.exam-box:hover {
+  background: #2563EB;
+  color: #FFFFFF;
+  transform: translateY(-3px);
+}
+
+@media (max-width: 500px) {
+  .exam-boxes {
+    gap: 8px;
+  }
+
+  .exam-box {
+    min-width: 85px;
+    padding: 14px 8px;
+    font-size: 14px;
+  }
+}
+
+.form-heading {
+  margin-bottom: 12px;
+}
+
+.form-heading h2 {
+  font-size: 21px;
+  line-height: 1.4;
+  color: #16845f;
+  margin: 0;
+}
+
+#leadForm {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+#leadForm > input[type="text"],
+#leadForm > input[type="email"],
+#leadForm > input[type="tel"] {
+  width: 100%;
+  box-sizing: border-box;
+  height: 40px;
+  padding: 8px 12px;
+  margin: 0;
+  border: 1px solid #cbded4;
+  border-radius: 7px;
+  font-size: 14px;
+}
+
+#leadForm .year-title {
+  margin: 5px 0 0;
+  font-weight: 600;
+}
+
+#leadForm .year-option,
+#leadForm .consent-option {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0;
+  font-size: 13px;
+}
+
+#leadForm button {
+  margin-top: 5px;
+}
+.brand-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  display: block;
+  border-radius: 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ==========================================
+   COLLEGE IQ - BLUE SCIENTIFIC HERO DESIGN
+========================================== */
+
+.science-art {
+  position: relative;
+  min-height: 470px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle, #eaf4ff 0%, #f7fbff 55%, #ffffff 100%);
+  border-radius: 28px;
+  overflow: hidden;
+}
+
+.atom-illustration {
+  width: 245px;
+  height: 245px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.atom-core {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 25%, #80C4FF, #1769D2 65%, #0B1F4D);
+  box-shadow: 0 0 35px rgba(23, 105, 210, .35);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 5px;
+  z-index: 3;
+}
+
+.atom-core span {
+  width: 16px;
+  height: 16px;
+  background: #ffffff;
+  border-radius: 50%;
+}
+
+.atom-orbit {
+  position: absolute;
+  width: 225px;
+  height: 90px;
+  border: 2px solid rgba(23, 105, 210, .65);
+  border-radius: 50%;
+}
+
+.orbit-a { transform: rotate(0deg); }
+.orbit-b { transform: rotate(60deg); }
+.orbit-c { transform: rotate(-60deg); }
+
+.electron {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background: #1769D2;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 12px rgba(23, 105, 210, .5);
+}
+
+.electron-one { top: 3px; left: 35px; }
+.electron-two { bottom: 8px; right: 32px; }
+.electron-three { top: 35px; right: 5px; }
+
+.science-card {
+  position: absolute;
+  background: rgba(255, 255, 255, .96);
+  border: 1px solid #d7e9ff;
+  border-radius: 14px;
+  padding: 13px 16px;
+  box-shadow: 0 10px 30px rgba(11, 31, 77, .09);
+  z-index: 4;
+}
+
+.science-label {
+  display: block;
+  color: #1769D2;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 1.4px;
+  margin-bottom: 7px;
+}
+
+.science-formula {
+  color: #0B1F4D;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.math-card {
+  top: 35px;
+  left: 5%;
+}
+
+.physics-card {
+  top: 75px;
+  right: 4%;
+}
+
+.geometry-card {
+  bottom: 65px;
+  left: 3%;
+}
+
+.chemistry-card {
+  bottom: 45px;
+  right: 4%;
+  width: 105px;
+  text-align: center;
+}
+
+.flask-svg {
+  width: 65px;
+  height: 70px;
+  display: block;
+  margin: 0 auto;
+}
+
+.science-caption {
+  position: absolute;
+  bottom: 13px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #0B1F4D;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  white-space: nowrap;
+}
+
+.caption-dot {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 6px;
+  border-radius: 50%;
+  background: #1769D2;
+}
+
+/* Logo styling */
+
+.brand-logo {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+  display: block;
+  flex-shrink: 0;
+}
+
+.brand,
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Mobile layout */
+
+@media (max-width: 600px) {
+
+  .science-art {
+    min-height: 390px;
+    border-radius: 20px;
+  }
+
+  .atom-illustration {
+    transform: scale(.78);
+  }
+
+  .science-card {
+    padding: 9px 11px;
+  }
+
+  .science-formula {
+    font-size: 16px;
+  }
+
+  .science-label {
+    font-size: 8px;
+  }
+
+  .math-card {
+    top: 20px;
+    left: 3%;
+  }
+
+  .physics-card {
+    top: 65px;
+    right: 2%;
+  }
+
+  .geometry-card {
+    bottom: 60px;
+    left: 2%;
+  }
+
+  .chemistry-card {
+    bottom: 45px;
+    right: 2%;
+    width: 85px;
+  }
+
+  .flask-svg {
+    width: 50px;
+    height: 55px;
+  }
+}
+
+/* ==================================
+   COLLEGE IQ - BLUE SUBJECT PILLS
+================================== */
+
+.subject-pills {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin: 25px 0;
+}
+
+.subject-pill {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 5px 18px;
+  border: 2px solid #80C4FF;
+  border-radius: 50px;
+  background: #ffffff;
+  color: #0B1F4D;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  transition: all .25s ease;
+}
+
+.subject-pill:hover {
+  background: #EAF4FF;
+  border-color: #1769D2;
+  transform: translateY(-2px);
+}
+
+.subject-symbol {
+  color: #1769D2;
+  font-size: 37px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.subject-icon {
+  width: 32px;
+  height: 32px;
+  fill: none;
+  stroke: #1769D2;
+  stroke-width: 2.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+}
+
+.flask-icon path:nth-child(2) {
+  fill: #80C4FF;
+  stroke: #1769D2;
+}
+
+/* Mobile responsive */
+
+@media (max-width: 600px) {
+  .subject-pills {
+    gap: 9px;
+  }
+
+  .subject-pill {
+    min-height: 45px;
+    padding: 5px 12px;
+    gap: 8px;
+    font-size: 13px;
+  }
+
+  .subject-symbol {
+    font-size: 29px;
+  }
+
+  .subject-icon {
+    width: 25px;
+    height: 25px;
+  }
+}
+.hero-subtitle {
+  color: #64748B;
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  margin: 8px 0 20px;
+  letter-spacing: 0.1px;
+}
+
+@media (max-width: 600px) {
+  .hero-subtitle {
+    font-size: 13px;
+    margin: 6px 0 16px;
+  }
+}
+.brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  display: block;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+
+/* =================================
+   WHY COLLEGE IQ SECTION
+================================= */
+
+.why-college-iq {
+  padding: 75px 5%;
+  background: #F5F8FF;
+}
+
+.why-heading {
+  text-align: center;
+  max-width: 650px;
+  margin: 0 auto 40px;
+}
+
+.section-label {
+  color: #1769D2;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.why-heading h2 {
+  color: #0B1F4D;
+  font-size: 34px;
+  margin: 12px 0;
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.why-heading p {
+  color: #64748B;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1380px;
+  margin: auto;
+}
+
+.benefit-card {
+  background: #FFFFFF;
+  border: 1px solid #E3EAF5;
+  border-radius: 16px;
+  padding: 27px 22px;
+  transition: all 0.25s ease;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(11, 31, 77, 0.08);
+  border-color: #80C4FF;
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 13px;
+  font-size: 23px;
+  margin-bottom: 20px;
+}
+
+.blue-icon {
+  background: #E1EDFF;
+}
+
+.orange-icon {
+  background: #FFF0E3;
+}
+
+.purple-icon {
+  background: #F0EAFE;
+}
+
+.green-icon {
+  background: #E3F8ED;
+}
+
+.benefit-card h3 {
+  color: #0B1F4D;
+  font-size: 17px;
+  margin-bottom: 11px;
+}
+
+.benefit-card p {
+  color: #64748B;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+.why-bottom {
+  max-width: 1380px;
+  margin: 35px auto 0;
+  padding: 25px;
+  background: #0B1F4D;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.why-bottom h3 {
+  color: #FFFFFF;
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+
+.why-bottom p {
+  color: #C9D9FF;
+  font-size: 14px;
+  margin: 0;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 900px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .why-college-iq {
+    padding: 50px 5%;
+  }
+
+  .why-heading h2 {
+    font-size: 27px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .benefit-card {
+    padding: 22px;
+  }
+
+  .why-bottom h3 {
+    font-size: 18px;
+  }
+}
+
+/* =================================
+   COLLEGE IQ - PREPARATION SECTION
+================================= */
+
+.preparation-section {
+  background: #FFFFFF;
+  padding: 75px 6% 65px;
+}
+
+.preparation-heading {
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.preparation-label {
+  color: #7545D8;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.preparation-heading h2 {
+  color: #17213B;
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  margin: 12px 0 8px;
+}
+
+.preparation-heading p {
+  color: #64748B;
+  font-size: 15px;
+  margin: 0;
+}
+
+.preparation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 35px;
+  max-width: 1250px;
+  margin: 0 auto 58px;
+}
+
+.preparation-card {
+  padding: 22px 15px;
+  border-top: 1px solid #E9EAF0;
+  border-bottom: 1px solid #E9EAF0;
+}
+
+.preparation-icon {
+  width: 35px;
+  height: 35px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #F2ECFF;
+  color: #7545D8;
+  border-radius: 10px;
+  font-size: 21px;
+  margin-bottom: 15px;
+}
+
+.preparation-number {
+  color: #94A3B8;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.preparation-card h3 {
+  color: #17213B;
+  font-size: 17px;
+  margin: 0 0 10px;
+}
+
+.preparation-card p {
+  color: #64748B;
+  font-size: 14px;
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* GRADIENT CTA */
+
+.preparation-cta {
+  position: relative;
+  overflow: hidden;
+  max-width: 1350px;
+  margin: auto;
+  padding: 48px 20px;
+  border-radius: 22px;
+  background: linear-gradient(110deg, #2866E8, #6926D9);
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.preparation-cta h2 {
+  position: relative;
+  z-index: 1;
+  color: #FFFFFF;
+  font-size: 27px;
+  margin: 0 0 10px;
+}
+
+.preparation-cta p {
+  position: relative;
+  z-index: 1;
+  color: #E7E5FF;
+  font-size: 15px;
+  margin: 0 0 25px;
+}
+
+.preparation-btn {
+  position: relative;
+  z-index: 2;
+  border: none;
+  border-radius: 9px;
+  padding: 14px 25px;
+  background: #FFFFFF;
+  color: #6538C9;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+.preparation-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.preparation-btn span {
+  margin-left: 8px;
+}
+
+/* DECORATIVE CIRCLES */
+
+.cta-circle {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.09);
+}
+
+.circle-left {
+  left: -40px;
+  bottom: -65px;
+}
+
+.circle-right {
+  right: -55px;
+  top: -75px;
+}
+
+/* COLLEGE IQ FOOTER */
+
+.collegeiq-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  padding: 25px 5%;
+  background: #FFFFFF;
+  border-top: 1px solid #F0F1F5;
+}
+
+.footer-brand {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  text-decoration: none;
+  color: #17213B;
+  white-space: nowrap;
+}
+
+.footer-brand strong {
+  font-size: 15px;
+}
+
+.footer-description {
+  max-width: 420px;
+  color: #94A3B8;
+  font-size: 11px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.footer-copyright {
+  color: #94A3B8;
+  font-size: 11px;
+  white-space: nowrap;
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 800px) {
+
+  .preparation-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .preparation-heading h2 {
+    font-size: 28px;
+  }
+
+  .preparation-cta h2 {
+    font-size: 22px;
+  }
+
+  .collegeiq-footer {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .footer-description {
+    max-width: 350px;
+  }
+
+}
+
+@media (max-width: 500px) {
+
+  .preparation-section {
+    padding: 50px 5%;
+  }
+
+  .preparation-cta {
+    padding: 38px 15px;
+  }
+
+  .preparation-cta h2 {
+    font-size: 20px;
+  }
+
+}
+
