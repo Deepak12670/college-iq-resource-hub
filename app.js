@@ -9,18 +9,28 @@ const RESOURCE_LINKS = {
 };
 
 
-// Top 10 colleges
+// TOP 20 COLLEGES
 const colleges = [
-  ["IIT Tirupati","Indian Institute of Technology · Tirupati, AP"],
-  ["NIT Warangal","National Institute of Technology · Warangal, Telangana"],
-  ["IIIT Hyderabad","International Institute of Information Technology · Hyderabad"],
-  ["JNTU Hyderabad","Jawaharlal Nehru Technological University · Hyderabad"],
+  ["JNTUH College of Engineering, Hyderabad","Kukatpally, Hyderabad"],
   ["University College of Engineering, Osmania University","Hyderabad, Telangana"],
-  ["Andhra University College of Engineering","Visakhapatnam, AP"],
-  ["JNTU Kakinada","Jawaharlal Nehru Technological University · Kakinada, AP"],
-  ["IIT Hyderabad","Indian Institute of Technology · Sangareddy, Telangana"],
-  ["K L University","Vijayawada region, AP"],
-  ["VNR Vignana Jyothi Institute of Engineering & Technology","Hyderabad, Telangana"]
+  ["Chaitanya Bharathi Institute of Technology","Gandipet, Hyderabad"],
+  ["VNR Vignana Jyothi Institute of Engineering & Technology","Bachupally, Hyderabad"],
+  ["Vasavi College of Engineering","Ibrahim Bagh, Hyderabad"],
+  ["CVR College of Engineering","Ibrahimpatnam, Hyderabad"],
+  ["Gokaraju Rangaraju Institute of Engineering & Technology","Bachupally, Hyderabad"],
+  ["Keshav Memorial Institute of Technology","Narayanguda, Hyderabad"],
+  ["G Narayanamma Institute of Technology & Science","Shaikpet, Hyderabad"],
+  ["Mahatma Gandhi Institute of Technology","Gandipet, Hyderabad"],
+  ["Sreenidhi Institute of Science and Technology","Ghatkesar, Hyderabad"],
+  ["M V S R Engineering College","Nadergul, Hyderabad"],
+  ["B V Raju Institute of Technology","Narsapur, Telangana"],
+  ["Vardhaman College of Engineering","Shamshabad, Hyderabad"],
+  ["Neil Gogte Institute of Technology","Kachiguda, Hyderabad"],
+  ["Anurag University","Ghatkesar, Hyderabad"],
+  ["Institute of Aeronautical Engineering","Dundigal, Hyderabad"],
+  ["CMR College of Engineering & Technology","Kandlakoya, Hyderabad"],
+  ["MLR Institute of Technology","Dundigal, Hyderabad"],
+  ["Vidya Jyothi Institute of Technology","Aziz Nagar, Hyderabad"]
 ];
 
 
@@ -169,8 +179,7 @@ if (leadForm) {
       console.error("Unable to save session data:", error);
     }
 
-    // Start Google Sheets submission in the background.
-    // keepalive helps the small request continue during navigation.
+    // Start Google Sheets submission in the background
     try {
 
       const submission = fetch(GOOGLE_SCRIPT_URL, {
@@ -189,7 +198,6 @@ if (leadForm) {
 
       });
 
-      // Handle any network error without delaying navigation
       submission.catch(error => {
         console.error("Google Sheets submission error:", error);
       });
